@@ -47,16 +47,3 @@ $ npm run unstake
 ```shell
 $ npm run info
 ```
-
-## Register BLS keys
-Exzocoin runs in BLS mode, so in order for nodes to become validators, they need to register their BLS public keys after staking.
-
-Setup the your `.env` file:
-```
-cp .env.register .env
-```
-
-Fill out the variables and then run the following command:
-```
-npm run register-blskey
-```

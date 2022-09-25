@@ -13,15 +13,15 @@ const config: HardhatUserConfig = {
   solidity: "0.8.7",
   networks: {
     exzocoin: {
-      url: process.env.JSONRPC_URL ?? "http://localhost:10002",
+      url: process.env.JSONRPC_URL ?? "http://localhost:8545",
       accounts: [
           ...privateKeys,
       ],
     },
   },
   gasReporter: {
-    currency: "EUR",
-    gasPrice: 21
+    currency: "USD",
+    gasPrice: 0
   },
   typechain: {
     outDir: "types",
