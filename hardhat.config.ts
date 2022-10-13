@@ -12,8 +12,14 @@ const privateKeys = (process.env.PRIVATE_KEYS ?? "000000000000000000000000000000
 const config: HardhatUserConfig = {
   solidity: "0.8.7",
   networks: {
-    exzocoin: {
-      url: process.env.JSONRPC_URL ?? "http://localhost:8545",
+    exzo: {
+      url: process.env.JSONRPC_URL ?? "https://mainnet.exzo.technology",
+      accounts: [
+          ...privateKeys,
+      ],
+    },
+    testexzo: {
+      url: process.env.JSONRPC_URL ?? "https://testnet.exzo.technology",
       accounts: [
           ...privateKeys,
       ],

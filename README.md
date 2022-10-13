@@ -10,6 +10,12 @@ $ cd staking-contracts
 $ npm i
 ```
 
+### Prepare for use
+```shell
+$ cp .env.example .env
+```
+Enter your validator's private key into the `.env` file and save
+
 ### Build contracts
 
 ```shell

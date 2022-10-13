@@ -1,7 +1,7 @@
 import { ethers } from "hardhat";
 
 const STAKING_CONTRACT_ADDRESS = process.env.STAKING_CONTRACT_ADDRESS ?? "";
-const STAKE_AMOUNT = ethers.utils.parseEther("1");
+const STAKE_AMOUNT = ethers.utils.parseEther("10000");
 
 async function main() {
   const [account] = await ethers.getSigners();
